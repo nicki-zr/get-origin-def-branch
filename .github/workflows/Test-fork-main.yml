@@ -1,6 +1,8 @@
 name: Test-Linter
 
-on: push
+on: 
+    schedule:
+      - cron: "0 10 * * 1"
 
 jobs:
   super-lint:
