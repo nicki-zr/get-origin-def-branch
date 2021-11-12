@@ -1,22 +1,12 @@
-name: Alex-exercise
+# name: Alex exercise
 
-on: push
-    
-    jobs:
+#   on: push
 
-      - name: Get default branch from origin
-        id: get-origin-default-branch
-        uses: pipeline-foundation/get-origin-def-branch@v1.0.0
+#     jobs: 
 
-      - name: Get default branch from origin of owner/repo
-        id: get-origin-default-branch
-        uses: pipeline-foundation/get-origin-def-branch@v1.0.0
-           
-            with:
-              origin: owner/repo
-
-${{ steps.get-origin-default-branch.outputs.default_branch }}
+#     runs-on: ubuntu-20.04
 
 
 
-# Built with ❤ by [Pipeline Foundation](https://pipeline.foundation)
+
+# # Built with ❤ by [Pipeline Foundation](https://pipeline.foundation)
